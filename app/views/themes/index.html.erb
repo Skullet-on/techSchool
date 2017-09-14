@@ -14,6 +14,7 @@
     <% @themes.each do |theme| %>
       <tr>
         <td><%= theme.name %></td>
+        <td><%= theme.technology_id %></td>
         <td><%= link_to 'Show', theme %></td>
         <td><%= link_to 'Edit', edit_theme_path(theme) %></td>
         <td><%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
